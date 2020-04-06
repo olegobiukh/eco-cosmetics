@@ -1,7 +1,41 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "normalize";
+
+@import "./common/common.scss";
+@import "./common/form.scss";
+
+@import "./components/header.scss";
+@import "./components/top.scss";
+@import "./components/logo.scss";
+@import "./components/nav.scss";
+@import "./components/gift.scss";
+@import "./components/about.scss";
+@import "./components/shop.scss";
+@import "./components/creators.scss";
+@import "./components/powder.scss";
+@import "./components/advantages.scss";
+@import "./components/contact.scss";
+@import "./components/footer.scss";
+@import "./components/menu.scss";
+@import "./components/arrows.scss";
+@import "./components/product.scss";
+@import "./components/checkout.scss";
+@import "./components/shipping.scss";
+@import "./components/payment.scss";
+@import "./components/confirmation.scss";
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  background: $c-gray;
+  background-color: $bg-body;
+  padding-top: 20px;
+  color: $c-body;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: $f-light, sans-serif;
 }

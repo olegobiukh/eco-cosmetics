@@ -1,0 +1,34 @@
+@import "../utils";
+
+.nav {
+  &__list {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    text-transform: capitalize;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav {
+    z-index: 1;
+    &__list {
+      justify-content: flex-start;
+      grid-template-columns: 1fr;
+      grid-gap: 66px;
+      height: fit-content;
+    }
+    &__link {
+      color: #e4dfd3;
+    }
+    &__item {
+      width: 100%;
+      border-bottom: 2px solid #828282;
+      text-align: center;
+      padding-bottom: 10px;
+      cursor: pointer;
+    }
+  }
+}

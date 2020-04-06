@@ -1,0 +1,66 @@
+@import "../utils/vars";
+
+.button {
+  width: 280px;
+  height: 60px;
+  text-align: center;
+  line-height: 60;
+  background-color: $c-body;
+  border: 2px solid transparent;
+  cursor: pointer;
+  color: $c-button;
+  line-height: 60px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: bold;
+  transition: all 0.5s;
+  &:hover {
+    color: $c-body;
+    background-color: transparent;
+    border-color: $c-body;
+  }
+}
+
+.link {
+  color: $c-link;
+  text-transform: uppercase;
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    border-bottom: 1px solid $c-link;
+  }
+}
+
+.section {
+  display: grid;
+  grid-auto-columns: 35% 60%;
+  grid-template-areas: "a a";
+  width: 90%;
+  max-width: 1080px;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 200px;
+  &__title {
+    text-transform: uppercase;
+  }
+  &__text {
+    margin-top: 20px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 400px) {
+  .button {
+    width: 100%;
+  }
+}

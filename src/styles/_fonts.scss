@@ -1,6 +1,13 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-family: "Railway light";
+  src: url("../fonts/raleway/Raleway-Light.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Railway medium";
+  src: url("../fonts/raleway/Raleway-Medium.ttf") format("woff");
   font-weight: normal;
   font-style: normal;
 }

@@ -1,0 +1,81 @@
+@import "../utils";
+
+.product {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-template-rows: repeat(3, max-content) 1fr 60px;
+  grid-auto-flow: row;
+  grid-gap: 0 100px;
+  max-width: $w-max;
+  margin: auto;
+  margin-top: 70px;
+  padding-bottom: 110px;
+  &__title {
+    margin: 0;
+    text-transform: capitalize;
+  }
+  &__price,
+  &__weight {
+    text-transform: uppercase;
+  }
+  &__title {
+    margin: 0;
+  }
+  &__button {
+    justify-self: center;
+  }
+  &__image {
+    width: 100%;
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(1.2);
+    }
+    &-wrapper {
+      height: 400px;
+      grid-column: 1;
+      grid-row: 1 / -1;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .product {
+    width: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, max-content) 1fr;
+
+    &__title {
+      margin-top: 30px;
+      font-size: 24px;
+    }
+    &__button {
+      margin-top: 30px;
+      grid-row: 8;
+    }
+    &__text {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .product {
+    width: 90%;
+    margin-top: 30px;
+    &__title {
+      font-size: 20px;
+    }
+    &__image-wrapper {
+      grid-row: 3;
+    }
+    &__weight {
+      display: none;
+    }
+    &__button {
+      grid-row: 4;
+      width: 100%;
+    }
+  }
+}

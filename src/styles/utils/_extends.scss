@@ -1,4 +1,22 @@
-%h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+@import './vars';
+
+%nav {
+  display: grid;
+  grid-gap: 40px;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+%section {
+  max-width: $w-max; 
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+%gift-line {
+  content: "";
+  position: absolute;
+  width: 43%;
+  border: 1px solid $c-body;
 }

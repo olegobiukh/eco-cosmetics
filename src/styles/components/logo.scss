@@ -1,0 +1,21 @@
+.logo {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 50px auto;
+  grid-gap: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1000px) {
+  .logo {
+    justify-items: center;
+    grid-gap: 0;
+    &__text {
+      display: none;
+    }
+    &__image {
+      width: 25px;
+    }
+  }
+}

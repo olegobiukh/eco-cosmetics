@@ -1,0 +1,51 @@
+@import "../utils";
+
+.footer {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  max-width: $w-max;
+  margin: 0 auto;
+  color: #e4dfd3;
+  background-color: #8c9772;
+  font-size: 18px;
+  padding: 65px 50px;
+  margin-top: 200px;
+  &__nav {
+    @extend %nav;
+    grid-template-columns: auto auto auto;
+    justify-content: start;
+  }
+  a {
+    color: #e4dfd3;
+  }
+  &__info {
+    margin: 0;
+  }
+  &__copy {
+    margin: 0;
+  }
+  &__media {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto;
+    justify-content: start;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 65px 8%;
+    &__copy {
+      order: 2;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .footer {
+    margin-top: 90px;
+  }
+}

@@ -1,0 +1,72 @@
+@import "../utils";
+
+.powder {
+  width: 90%;
+  margin: auto;
+  margin-top: 200px;
+  max-width: $w-max;
+  &__link {
+    grid-area: link;
+    display: inline-block;
+  }
+  &__right {
+    width: 100%;
+    display: grid;
+    justify-content: end;
+    grid-auto-flow: column;
+    grid-gap: 100px;
+  }
+  &__list {
+    display: grid;
+    grid-gap: 20px;
+  }
+  &__title {
+    grid-area: title;
+  }
+  &__right {
+    grid-area: image;
+  }
+  &__item {
+    position: relative;
+    font-size: 16px;
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    &::after {
+      content: "";
+      $line-width: 76px;
+      position: absolute;
+      top: 50%;
+      right: -$line-width - 10;
+      display: block;
+      background-image: url("../../images/point-line.svg");
+      width: $line-width;
+      height: 5px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .powder {
+    grid-auto-columns: 90%;
+    grid-template-areas: "a";
+    width: 90%;
+    margin: auto;
+    margin-top: 90px;
+    margin-left: 10%;
+    overflow: hidden;
+    &__right {
+      position: relative;
+      justify-content: start;
+    }
+    &__list {
+      grid-gap: 58px;
+    }
+    &__image {
+      position: absolute;
+      transform: translateX(61%);
+    }
+  }
+}

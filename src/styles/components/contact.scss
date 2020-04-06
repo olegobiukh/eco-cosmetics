@@ -1,0 +1,59 @@
+.contact {
+  &__left {
+    max-width: 480px;
+    width: 100%;
+  }
+  &__form {
+    display: grid;
+    grid-gap: 30px;
+  }
+  &__right {
+    display: grid;
+    justify-items: end;
+    height: 409px;
+  }
+  &__image {
+    height: 100%;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+  &__button {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .contact {
+    position: relative;
+    width: auto;
+    margin-left: 5%;
+    margin-right: 0;
+    grid-auto-columns: 50% auto;
+    overflow: hidden;
+    &__right {
+      position: absolute;
+      right: -100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .contact {
+    margin: auto;
+    grid-auto-columns: 100%;
+    justify-items: center;
+    margin-top: 90px;
+    &__right {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .contact {
+    width: 90%;
+  }
+}
+

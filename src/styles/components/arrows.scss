@@ -1,0 +1,23 @@
+@import "../utils";
+
+.arrows {
+  &__item {
+    width: 25px;
+    height: 15px;
+    margin-top: 45px;
+    background-position: left center;
+    background-size: cover;
+    background-image: url("../../images/arrows/arrow.svg");
+    border: none;
+    background-color: transparent;
+    outline: transparent;
+    cursor: pointer;
+    &--disable {
+      pointer-events: none;
+      opacity: 0.6;
+    }
+    &:last-of-type {
+      transform: rotate(180deg);
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import "../utils";
+
+$opacity: 0.6;
+
+.payment {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  margin-top: 60px;
+  &__toolbar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    justify-content: space-around;
+    margin-top: 66px;
+  }
+  &__title {
+    text-transform: none;
+    font-size: 20px;
+  }
+  &__image {
+    height: 50px;
+  }
+  &__image,
+  &__text {
+    opacity: $opacity;
+  }
+  &__input {
+    display: none;
+    &:checked {
+      ~ .payment__text {
+        font-weight: bold;
+        opacity: 1;
+      }
+      ~ .payment__image {
+        opacity: 1;
+      }
+    }
+  }
+  &__label {
+    display: grid;
+    justify-items: center;
+    cursor: pointer;
+  }
+  &__text {
+    text-transform: capitalize;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .payment__toolbar {
+    grid-template-columns: auto;
+    grid-gap: 45px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .payment {
+    margin-top: 30px;
+  }
+}

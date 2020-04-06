@@ -1,3 +1,14 @@
-h1 {
-  @extend %h1;
+@for $i from 1 through 6 {
+  h#{$i} {
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
+
+a {
+  color: $c-link;
+}
+
+ul {
+  padding-left: 0;
 }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco cosmetic</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="top">
+        <input type="checkbox" id="menuToggler" class="menu__input" />
+        <label class="menu__label" for="menuToggler">
+          <span class="menu__line"></span>
+          <span class="menu__line"></span>
+          <span class="menu__line"></span>
+        </label>
+        <a href="./" class="logo">
+          <img src="./images/header/logo.svg" alt="logo" class="logo__image" />
+          <span class="logo__text">witch of mountain winds</span>
+        </a>
+        <nav class="top__nav nav">
+          <ul class="nav__list" id="menu">
+            <li class="nav__item">
+              <a href="./#shop" class="nav__link">shop</a>
+            </li>
+            <li class="nav__item">
+              <a href="./#contact" class="nav__link">contact</a>
+            </li>
+            <li class="nav__item">
+              <a href="./#about" class="nav__link">about</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#shop" class="top__shop">
+          <img src="./images/header/bag.png" alt="bag" class="top__image" />
+        </a>
+      </div>
+    </header>
+    <section class="checkout">
+      <h1 class="checkout__title">Checkout</h1>
+      <div class="checkout__toolbar">
+        <span class="checkout__item">
+          shipping
+        </span>
+        <span class="checkout__item checkout__item--active">
+          payment
+        </span>
+        <span class="checkout__item">
+          confirmation
+        </span>
+      </div>
+      <section class="payment">
+        <h2 class="payment__title">Choose payment option</h2>
+        <div class="payment__toolbar">
+          <label class="payment__label">
+            <input type="radio" name="payment" value="card" class="payment__input" onclick="paymentChosen()" />
+            <img
+              src="./images/payment/credit-card.svg"
+              alt="Credit card"
+              class="payment__image"
+            />
+            <span class="payment__text">credit card</span>
+          </label>
+          <label class="payment__label">
+            <input type="radio" name="payment" value="delivery" class="payment__input" onclick="paymentChosen()" />
+            <img
+              src="./images/payment/delivery.svg"
+              alt="Payment on delivery"
+              class="payment__image"
+            />
+            <span class="payment__text">payment on delivery</span>
+          </label>
+        </div>
+        <button type="button" class="button shipping__button disabled" id="paymentButton" onclick="submitPayment()">next</button>
+      </section>
+    </section>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/transition.js"></script>
+  </body>
+</html>
