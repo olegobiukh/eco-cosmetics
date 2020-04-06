@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/form.scss"],"names":[],"mappings":"AAGE;EACE,6BAA6B;EAC7B,YAAY;EACZ,gCAAgC;EAChC,iBAAiB,EAAA","file":"form.css","sourcesContent":["@import \"../utils/vars\";\r\n\r\n.form {\r\n  &__input {\r\n    background-color: transparent;\r\n    border: none;\r\n    border-bottom: 1px solid #bdbdbd;\r\n    padding: 10px 5px;\r\n  }\r\n}"]}

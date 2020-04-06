@@ -1,0 +1,43 @@
+.payment {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  margin-top: 60px; }
+  .payment__toolbar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 66px; }
+  .payment__title {
+    text-transform: none;
+    font-size: 20px; }
+  .payment__image {
+    height: 50px; }
+  .payment__image, .payment__text {
+    opacity: 0.6; }
+  .payment__input {
+    display: none; }
+    .payment__input:checked ~ .payment__text {
+      font-weight: bold;
+      opacity: 1; }
+    .payment__input:checked ~ .payment__image {
+      opacity: 1; }
+  .payment__label {
+    display: grid;
+    justify-items: center;
+    cursor: pointer; }
+  .payment__text {
+    text-transform: capitalize; }
+
+@media only screen and (max-width: 768px) {
+  .payment__toolbar {
+    grid-template-columns: auto;
+    grid-gap: 45px; } }
+
+@media only screen and (max-width: 400px) {
+  .payment {
+    margin-top: 30px; } }
+
+/*# sourceMappingURL=payment.css.map */

@@ -1,0 +1,55 @@
+.menu__label {
+  display: none;
+  position: relative;
+  grid-auto-flow: row;
+  -webkit-column-gap: 1/3;
+     -moz-column-gap: 1/3;
+          column-gap: 1/3;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 2; }
+
+.menu__line {
+  border-bottom: 1px solid #333;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.menu__input {
+  display: none; }
+
+.menu__input:checked ~ .menu__label {
+  -webkit-animation: burger 0.5s;
+          animation: burger 0.5s; }
+  .menu__input:checked ~ .menu__label .menu__line {
+    position: absolute;
+    top: 50%;
+    border-color: #fff; }
+    .menu__input:checked ~ .menu__label .menu__line:first-of-type {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .menu__input:checked ~ .menu__label .menu__line:nth-last-of-type(2) {
+      display: none; }
+    .menu__input:checked ~ .menu__label .menu__line:last-of-type {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+
+@-webkit-keyframes burger {
+  from {
+    display: none; }
+  to {
+    display: block; } }
+
+@keyframes burger {
+  from {
+    display: none; }
+  to {
+    display: block; } }
+
+@media only screen and (max-width: 1000px) {
+  .menu__label {
+    display: grid; } }
+
+/*# sourceMappingURL=menu.css.map */

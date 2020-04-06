@@ -1,0 +1,96 @@
+.shop {
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 200px; }
+
+.shop {
+  margin-top: 200px;
+  display: grid; }
+  .shop__title {
+    text-transform: uppercase; }
+  .shop__label {
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #828282; }
+  .shop__toolbar {
+    display: grid;
+    grid-auto-columns: -webkit-max-content;
+    grid-auto-columns: max-content;
+    grid-template-areas: "shopToolbar1 shopToolbar2 shopToolbar3 shopToolbar4";
+    grid-gap: 20px;
+    margin-top: 20px; }
+    .shop__toolbar input {
+      display: none; }
+      .shop__toolbar input:checked + label {
+        color: #333; }
+        .shop__toolbar input:checked + label::after {
+          content: "";
+          display: block;
+          width: 100%;
+          margin-top: 5px;
+          border-bottom: 1px solid #333; }
+  .shop__container {
+    display: grid;
+    grid-template-areas: "a a a";
+    grid-gap: 20px;
+    margin-top: 63px; }
+  .shop__image {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+    .shop__image-wrapper {
+      width: 100%;
+      height: 500px;
+      overflow: hidden; }
+  .shop__item {
+    -webkit-animation: shopItem 1.5s forwards;
+            animation: shopItem 1.5s forwards; }
+    .shop__item:hover .shop__image {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
+    .shop__item-title {
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-top: 20px; }
+      .shop__item-title:hover {
+        text-decoration: underline;
+        cursor: pointer; }
+    .shop__item-price {
+      text-transform: uppercase;
+      font-size: 18px;
+      margin-top: 15px;
+      display: inline-block; }
+  .shop__button {
+    margin-top: 30px;
+    justify-self: center; }
+
+@media only screen and (max-width: 1000px) {
+  .shop__container {
+    grid-template-areas: "a a";
+    grid-template-columns: auto auto; }
+  .shop__image-wrapper {
+    height: 300px; } }
+
+@media only screen and (max-width: 600px) {
+  .shop {
+    min-width: 90%; }
+    .shop__container {
+      grid-template-areas: "a";
+      grid-template-columns: 100%;
+      grid-gap: 0; } }
+
+@-webkit-keyframes shopItem {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes shopItem {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/*# sourceMappingURL=shop.css.map */

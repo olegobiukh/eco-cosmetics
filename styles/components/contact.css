@@ -1,0 +1,50 @@
+.contact__left {
+  max-width: 480px;
+  width: 100%; }
+
+.contact__form {
+  display: grid;
+  grid-gap: 30px; }
+
+.contact__right {
+  display: grid;
+  justify-items: end;
+  height: 409px; }
+
+.contact__image {
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  .contact__image:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01); }
+
+.contact__button {
+  margin-top: 30px; }
+
+@media only screen and (max-width: 786px) {
+  .contact {
+    position: relative;
+    width: auto;
+    margin-left: 5%;
+    margin-right: 0;
+    grid-auto-columns: 50% auto;
+    overflow: hidden; }
+    .contact__right {
+      position: absolute;
+      right: -100px; } }
+
+@media only screen and (max-width: 700px) {
+  .contact {
+    margin: auto;
+    grid-auto-columns: 100%;
+    justify-items: center;
+    margin-top: 90px; }
+    .contact__right {
+      display: none; } }
+
+@media only screen and (max-width: 700px) {
+  .contact {
+    width: 90%; } }
+
+/*# sourceMappingURL=contact.css.map */

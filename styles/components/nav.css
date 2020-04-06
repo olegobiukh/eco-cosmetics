@@ -1,0 +1,32 @@
+.nav__list {
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  text-transform: capitalize;
+  font-size: 18px; }
+
+@media only screen and (max-width: 1000px) {
+  .nav {
+    z-index: 1; }
+    .nav__list {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      grid-template-columns: 1fr;
+      grid-gap: 66px;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content; }
+    .nav__link {
+      color: #e4dfd3; }
+    .nav__item {
+      width: 100%;
+      border-bottom: 2px solid #828282;
+      text-align: center;
+      padding-bottom: 10px;
+      cursor: pointer; } }
+
+/*# sourceMappingURL=nav.css.map */

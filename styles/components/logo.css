@@ -1,0 +1,20 @@
+.logo {
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-template-columns: 50px auto;
+  grid-gap: 20px;
+  font-size: 14px;
+  text-transform: uppercase; }
+
+@media only screen and (max-width: 1000px) {
+  .logo {
+    justify-items: center;
+    grid-gap: 0; }
+    .logo__text {
+      display: none; }
+    .logo__image {
+      width: 25px; } }
+
+/*# sourceMappingURL=logo.css.map */

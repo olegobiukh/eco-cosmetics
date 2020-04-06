@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco cosmetic</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="top">
+        <input type="checkbox" id="menuToggler" class="menu__input" />
+        <label class="menu__label" for="menuToggler">
+          <span class="menu__line"></span>
+          <span class="menu__line"></span>
+          <span class="menu__line"></span>
+        </label>
+        <a href="./" class="logo">
+          <img src="./images/header/logo.svg" alt="logo" class="logo__image" />
+          <span class="logo__text">witch of mountain winds</span>
+        </a>
+        <nav class="top__nav nav">
+          <ul class="nav__list" id="menu">
+            <li class="nav__item">
+              <a href="#shop" class="nav__link">shop</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">contact</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">about</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#shop" class="top__shop">
+          <img src="./images/header/bag.png" alt="bag" class="top__image" />
+        </a>
+      </div>
+      <div class="header__container">
+        <div class="header__left">
+          <h1 class="header__title">
+            Brand of eco-cosmetics and magic candles
+          </h1>
+          <p class="header__text">20% of sales at a wild bird shelter</p>
+          <a href="#shop" class="button header__button">shop</a>
+        </div>
+        <div class="header__image-wrapper">
+          <img
+            src="./images/header/candles.jpg"
+            alt="candles"
+            class="header__image"
+          />
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="gift">
+        <div class="gift__container">
+          <p class="gift__text">
+            Biologists say that birds are indicators of the environmental
+            situation, and over the past half century, the population of
+            seabirds has declined by 70%. Birds die due to environmental
+            problems and human intervention in the natural environment.
+          </p>
+          <h2 class="gift__title">
+            if you choose the gifts of nature and care about it’s - scroll down
+          </h2>
+        </div>
+      </section>
+      <section class="about section" id="about">
+        <div class="section__left">
+          <h2 class="section__title">about our brand</h2>
+          <p class="section__text">
+            Our brand cosmetics are made from natural ingredients and we are
+            promoting them to the masses. Shampoo, hair conditioner, soap - in
+            recycled paper. Creams, oils, washing products in glass containers
+            with recycled paper labels. No synthetics and microplastics in
+            cosmetics. And the packaging from it can be returned for recycling
+            or reused.
+          </p>
+          <p class="section__text">
+            We are all neighbors of one big House. And we must protect what we
+            have. Destroying everything around for the sake of consumerism and
+            imaginary convenience, we destroy what does not belong to us. Be
+            aware of your choice!
+          </p>
+          <a href="#" class="link about__link">learn more</a>
+        </div>
+        <div class="about__right">
+          <div class="about__image-wrapper">
+            <img
+              src="./images/about/1.png"
+              alt="moonlight"
+              class="about__image"
+            />
+          </div>
+          <div class="about__image-bg"></div>
+        </div>
+      </section>
+      <section class="shop" id="shop">
+        <h2 class="shop__title">shop</h2>
+        <div class="shop__toolbar">
+          <div class="shop__group">
+            <input type="radio" name="type" value="face" id="face" checked />
+            <label for="face" class="shop__label">face</label>
+          </div>
+          <div class="shop__group">
+            <input type="radio" name="type" value="body" id="body" />
+            <label for="body" class="shop__label">body</label>
+          </div>
+          <div class="shop__group">
+            <input type="radio" name="type" value="hair" id="hair" />
+            <label for="hair" class="shop__label">hair</label>
+          </div>
+          <div class="shop__group">
+            <input type="radio" name="type" value="candle" id="candles" />
+            <label for="candles" class="shop__label">candles</label>
+          </div>
+        </div>
+        <div class="shop__container" id="shopContainer1"></div>
+        <div class="arrows">
+          <button type="button" class="arrows__item" id="shopPrev"></button>
+          <button type="button" class="arrows__item" id="shopNext"></button>
+        </div>
+        <button type="button" class="button shop__button" id="shopAll">
+          all products
+        </button>
+      </section>
+      <section class="creators section">
+        <div class="section__left">
+          <h2 class="section__title">about the creators</h2>
+          <p class="section__text">
+            My name is Victoria, I’m a master at candle making and natural
+            cosmetics. In the past, a cynologist, was engaged in herbs, made
+            layouts on the Tarot.
+          </p>
+          <p class="section__text">
+            I am also a volunteer to save wild birds in distress, a consultant
+            to the Phoenix Wildlife Rehabilitation Center, a member of the
+            Society for the Conservation of Birds of Ukraine with the support of
+            Birdlife International.
+          </p>
+          <p class="section__text">
+            My husband and I live in the Carpathian region in the city of
+            Chernivtsi. I dream of my center for the rehabilitation of wild
+            birds, as it is very difficult to rescue birds in a rented communal
+            apartment.
+          </p>
+          <a href="#" class="link creators__link">learn more</a>
+        </div>
+        <div class="creators__right">
+          <img
+            src="./images/creators/1.jpg"
+            alt="bird"
+            class="creators__image"
+          />
+        </div>
+      </section>
+      <section class="powder">
+        <h2 class="section__title">Ayurvedic Tooth Powder</h2>
+        <div class="powder__right">
+          <ul class="powder__list">
+            <li class="powder__item">kaolin</li>
+            <li class="powder__item">sivak (Persian salvador)</li>
+            <li class="powder__item">calcium carbonate</li>
+            <li class="powder__item">licorice root</li>
+            <li class="powder__item">turmeric</li>
+          </ul>
+          <img src="./images/jar.svg" alt="jar" class="powder__image" />
+        </div>
+        <a href="#" class="link powder__link">learn more</a>
+      </section>
+      <section class="advantages">
+        <article class="advantages__box">
+          <img
+            src="./images/advantages/1.svg"
+            alt="snail"
+            class="advantages__image"
+          />
+          <h3 class="advantages__title">No synthetics and microplastics</h3>
+        </article>
+        <article class="advantages__box">
+          <img
+            src="./images/advantages/2.svg"
+            alt="recycle"
+            class="advantages__image"
+          />
+          <h3 class="advantages__title">
+            product packaging can be recycled or reused
+          </h3>
+        </article>
+        <article class="advantages__box">
+          <img
+            src="./images/advantages/3.svg"
+            alt="leaves"
+            class="advantages__image"
+          />
+          <h3 class="advantages__title">only natural ingredients</h3>
+        </article>
+      </section>
+      <section class="section contact" id="contact">
+        <div class="section__left contact__left">
+          <h2 class="contact__title">contact us</h2>
+          <p class="contact__text">
+            we will help you choose a product that suits you and answer your
+            other questions
+          </p>
+          <form class="form contact__form" method="POST">
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Your name"
+              required
+            />
+            <input
+              type="text"
+              class="form__input"
+              placeholder="E-mail"
+              required
+            />
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Phone number"
+              required
+            />
+            <input type="text" class="form__input" placeholder="Your message" />
+            <button type="submit" class="button contact__button">
+              send a message
+            </button>
+          </form>
+        </div>
+        <div class="contact__right">
+          <img
+            src="./images/contact/bird.jpg"
+            alt="bird"
+            class="contact__image"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav class="nav footer__nav">
+        <a href="#shop" class="footer__link">shop</a>
+        <a href="#contact" class="footer__link">contact</a>
+        <a href="#about" class="footer__link">about</a>
+      </nav>
+      <ul class="footer__info">
+        <li class="footer__item">Ukraine</li>
+        <li class="footer__item">
+          <a href="mailto:support.mountain@gmail.com"
+            >support.mountain@gmail.com</a
+          >
+        </li>
+        <li class="footer__item">
+          <a href="tel:+380934476839">+380934476839</a>
+        </li>
+        <li class="footer__item">
+          Support is available Monday - Friday 9am-6pm
+        </li>
+      </ul>
+      <p class="footer__copy">Copyright &copy; 2019 witch of mountain winds</p>
+      <div class="footer__media">
+        <img src="./images/media/facebook.svg" alt="facebook" />
+        <img src="./images/media/instagram.svg" alt="instagram" />
+      </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/shop.js"></script>
+  </body>
+</html>

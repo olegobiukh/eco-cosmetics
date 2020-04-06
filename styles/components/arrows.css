@@ -1,0 +1,19 @@
+.arrows__item {
+  width: 25px;
+  height: 15px;
+  margin-top: 45px;
+  background-position: left center;
+  background-size: cover;
+  background-image: url("../images/arrows/arrow.svg");
+  border: none;
+  background-color: transparent;
+  outline: transparent;
+  cursor: pointer; }
+  .arrows__item--disable {
+    pointer-events: none;
+    opacity: 0.6; }
+  .arrows__item:last-of-type {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
+/*# sourceMappingURL=arrows.css.map */

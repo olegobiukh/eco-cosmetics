@@ -1,0 +1,58 @@
+.button {
+  width: 280px;
+  height: 60px;
+  text-align: center;
+  line-height: 60;
+  background-color: #333;
+  border: 2px solid transparent;
+  cursor: pointer;
+  color: #f2f2f2;
+  line-height: 60px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  .button:hover {
+    color: #333;
+    background-color: transparent;
+    border-color: #333; }
+
+.link {
+  color: #344F10;
+  text-transform: uppercase; }
+  .link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    border-bottom: 1px solid #344F10; }
+
+.section {
+  display: grid;
+  grid-auto-columns: 35% 60%;
+  grid-template-areas: "a a";
+  width: 90%;
+  max-width: 1080px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  margin-top: 200px; }
+  .section__title {
+    text-transform: uppercase; }
+  .section__text {
+    margin-top: 20px; }
+
+.hide {
+  display: none; }
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.7; }
+
+@media only screen and (max-width: 400px) {
+  .button {
+    width: 100%; } }
+
+/*# sourceMappingURL=common.css.map */

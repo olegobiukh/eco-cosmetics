@@ -1,0 +1,61 @@
+.gift::before, .gift::after {
+  content: "";
+  position: absolute;
+  width: 43%;
+  border: 1px solid #333; }
+
+.gift {
+  display: grid;
+  position: relative;
+  margin-top: 200px;
+  padding-top: 100px;
+  padding-bottom: 69px; }
+  .gift__container {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "a a";
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .gift::before {
+    top: 0; }
+  .gift::after {
+    content: "";
+    right: 0;
+    bottom: 0; }
+  .gift__title {
+    font-size: 24px;
+    text-transform: uppercase;
+    max-width: 380px; }
+  .gift__text {
+    max-width: 380px; }
+
+@media only screen and (max-width: 1000px) {
+  .gift {
+    margin-top: 100px; } }
+
+@media only screen and (max-width: 768px) {
+  .gift__container {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "a";
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .gift__text {
+    display: none; }
+  .gift::before, .gift::after {
+    display: none; } }
+
+@media only screen and (max-width: 768px) {
+  .gift {
+    width: 90%;
+    margin: auto;
+    margin-top: 90px;
+    padding: 0; }
+    .gift__title {
+      font-size: 18px; } }
+
+/*# sourceMappingURL=gift.css.map */

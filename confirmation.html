@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco cosmetic</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="top">
+        <input type="checkbox" id="menuToggler" class="menu__input" />
+        <label class="menu__label" for="menuToggler">
+          <span class="menu__line"></span>
+          <span class="menu__line"></span>
+          <span class="menu__line"></span>
+        </label>
+        <a href="./" class="logo">
+          <img src="./images/header/logo.svg" alt="logo" class="logo__image" />
+          <span class="logo__text">witch of mountain winds</span>
+        </a>
+        <nav class="top__nav nav">
+          <ul class="nav__list" id="menu">
+            <li class="nav__item">
+              <a href="./#shop" class="nav__link">shop</a>
+            </li>
+            <li class="nav__item">
+              <a href="./#contact" class="nav__link">contact</a>
+            </li>
+            <li class="nav__item">
+              <a href="./#about" class="nav__link">about</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#shop" class="top__shop">
+          <img src="./images/header/bag.png" alt="bag" class="top__image" />
+        </a>
+      </div>
+    </header>
+    <section class="checkout">
+      <h1 class="checkout__title">Checkout</h1>
+      <div class="checkout__toolbar">
+        <span class="checkout__item">
+          shipping
+        </span>
+        <span class="checkout__item">
+          payment
+        </span>
+        <span class="checkout__item checkout__item--active">
+          confirmation
+        </span>
+      </div>
+      <section class="confirmation">
+        <h2 class="confirmation__title">Your order is accepted<br>Thank you for choosing us</h2>
+        <img src="./images/confirmation/leaf.svg" alt="leaf" class="confirmation__image">
+        <a href="./#shop" class="confirmation__link">back to shop</a>
+      </section>
+    </section>
+    <script src="scripts/menu.js"></script>
+  </body>
+</html>
